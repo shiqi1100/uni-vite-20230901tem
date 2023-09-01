@@ -1,0 +1,73 @@
+@for $i from 1 through 99 {
+  .ml-#{$i} {
+    margin-left: 1upx * $i;
+  }
+  .mr-#{$i} {
+    margin-right: 1upx * $i;
+  }
+  .mb-#{$i} {
+    margin-bottom: 1upx * $i;
+  }
+  .mt-#{$i} {
+    margin-top: 1upx * $i;
+  }
+  .fs-#{$i} {
+    font-size: 1upx * $i;
+  }
+  .pd-#{$i} {
+    padding: 1upx * $i;
+  }
+  .w-#{$i} {
+    width: 1upx * $i;
+  }
+  .h-#{$i} {
+    height: 1upx * $i;
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.h100 {
+  height: 100%;
+  padding-top: calc(var(--status-bar-height) + 133px);
+  box-sizing: border-box;
+}
+
+
+body {
+  height: 100%;
+}
+
+.text-2{
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  white-space: normal !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.text-1{
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  white-space: normal !important;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+
