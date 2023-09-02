@@ -36,7 +36,7 @@
     "build:quickapp-webview": "uni build -p quickapp-webview",
     "build:quickapp-webview-huawei": "uni build -p quickapp-webview-huawei",
     "build:quickapp-webview-union": "uni build -p quickapp-webview-union",
-    "test": "echo 6666666",
+    "test": "lint-staged",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -73,6 +73,7 @@
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
     "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
     "postcss": "^8.4.29",
     "postcss-import": "^15.1.0",
     "prettier": "^3.0.3",
@@ -82,5 +83,13 @@
     "unplugin-auto-import": "^0.16.6",
     "unplugin-vue-components": "^0.25.2",
     "vite": "^4.4.9"
+  },
+  "lint-staged": {
+    "*.{vue,js,ts,jsx,tsx,md}": [
+      "eslint --fix"
+    ],
+    "*.{scss,html}": [
+      "stylelint --fix"
+    ]
   }
 }
