@@ -3,6 +3,7 @@ import { defineConfig } from 'vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import uni from '@dcloudio/vite-plugin-uni'
+import WindiCSS from 'vite-plugin-windicss'
 // https://vitejs.dev/config/
 export default defineConfig({
   resolve: {
@@ -22,6 +23,12 @@ export default defineConfig({
     Components({
       extensions: ['vue'],
       dts: 'src/components.d.ts'
+    }),
+    WindiCSS({
+      scan: {
+        dirs: ['.'], // 当前目录下所有文件
+        fileExtensions: ['vue', 'js', 'ts'] // 同时启用扫描vue/js/ts
+      }
     }),
     uni()
   ],

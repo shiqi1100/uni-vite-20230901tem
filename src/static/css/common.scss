@@ -1,29 +1,29 @@
-@for $i from 1 through 99 {
-  .ml-#{$i} {
-    margin-left: 1upx * $i;
-  }
-  .mr-#{$i} {
-    margin-right: 1upx * $i;
-  }
-  .mb-#{$i} {
-    margin-bottom: 1upx * $i;
-  }
-  .mt-#{$i} {
-    margin-top: 1upx * $i;
-  }
-  .fs-#{$i} {
-    font-size: 1upx * $i;
-  }
-  .pd-#{$i} {
-    padding: 1upx * $i;
-  }
-  .w-#{$i} {
-    width: 1upx * $i;
-  }
-  .h-#{$i} {
-    height: 1upx * $i;
-  }
-}
+//@for $i from 1 through 99 {
+//  .ml-#{$i} {
+//    margin-left: 1upx * $i;
+//  }
+//  .mr-#{$i} {
+//    margin-right: 1upx * $i;
+//  }
+//  .mb-#{$i} {
+//    margin-bottom: 1upx * $i;
+//  }
+//  .mt-#{$i} {
+//    margin-top: 1upx * $i;
+//  }
+//  .fs-#{$i} {
+//    font-size: 1upx * $i;
+//  }
+//  .pd-#{$i} {
+//    padding: 1upx * $i;
+//  }
+//  .w-#{$i} {
+//    width: 1upx * $i;
+//  }
+//  .h-#{$i} {
+//    height: 1upx * $i;
+//  }
+//}
 
 .flex {
   display: flex;
@@ -40,8 +40,8 @@
 }
 
 .h100 {
-  height: 100%;
   padding-top: calc(var(--status-bar-height) + 133px);
+  height: 100%;
   box-sizing: border-box;
 }
 
@@ -51,7 +51,7 @@ body {
 }
 
 .text-2{
-  display: -webkit-box;
+  display: box;
   overflow: hidden;
   text-overflow: ellipsis;
   word-wrap: break-word;
@@ -61,7 +61,7 @@ body {
 }
 
 .text-1{
-  display: -webkit-box;
+  display: box;
   overflow: hidden;
   text-overflow: ellipsis;
   word-wrap: break-word;

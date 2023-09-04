@@ -1,9 +1,11 @@
 <template>
   <view class="content">
     <image class="logo" src="/static/logo.png"></image>
-    <view class="text-area">
-      <text class="title">{{ title }}</text>
+    <view class="text-area bg-blue-500 px-30">
+      <text class="px-52 bg-blue-500">{{ title }}</text>
     </view>
+    <view class="bg-amber-100 w-50 h-20 text-3xl font-bold underline">你好</view>
+    <view class="container bg-red-400 h-[50px]"> </view>
   </view>
 </template>
 
@@ -19,27 +21,4 @@ export default {
 }
 </script>
 
-<style>
-.content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.logo {
-  margin: 200 rpx auto 50 rpx;
-  width: 200rpx;
-  height: 200rpx;
-}
-
-.text-area {
-  display: flex;
-  justify-content: center;
-}
-
-.title {
-  font-size: 36rpx;
-  color: #8f8f94;
-}
-</style>
+<style></style>

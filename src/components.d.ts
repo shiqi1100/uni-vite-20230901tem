@@ -7,7 +7,21 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    Calendar: typeof import('./components/uni-datetime-picker/calendar.vue')['default']
+    CalendarItem: typeof import('./components/uni-datetime-picker/calendar-item.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    TimePicker: typeof import('./components/uni-datetime-picker/time-picker.vue')['default']
+    UniCollapse: typeof import('./components/uni-collapse/uni-collapse.vue')['default']
+    UniCollapseItem: typeof import('./components/uni-collapse-item/uni-collapse-item.vue')['default']
+    UniDataPicker: typeof import('./components/uni-data-picker/uni-data-picker.vue')['default']
+    UniDataPickerview: typeof import('./components/uni-data-pickerview/uni-data-pickerview.vue')['default']
+    UniDatetimePicker: typeof import('./components/uni-datetime-picker/uni-datetime-picker.vue')['default']
+    UniEasyinput: typeof import('./components/uni-easyinput/uni-easyinput.vue')['default']
+    UniForms: typeof import('./components/uni-forms/uni-forms.vue')['default']
+    UniFormsItem: typeof import('./components/uni-forms-item/uni-forms-item.vue')['default']
+    UniIcons: typeof import('./components/uni-icons/uni-icons.vue')['default']
+    UniLoadMore: typeof import('./components/uni-load-more/uni-load-more.vue')['default']
+    UseModal: typeof import('./components/use-modal/use-modal.vue')['default']
   }
 }

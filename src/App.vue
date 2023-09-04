@@ -8,11 +8,11 @@ export default {
   },
   onHide: function () {
     console.log('App Hide')
-  },
+  }
 }
 </script>
 
 <style lang="scss" scoped>
 /*每个页面公共css */
-@import "./uni.scss";
+@use './uni.scss';
 </style>

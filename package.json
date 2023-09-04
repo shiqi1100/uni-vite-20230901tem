@@ -82,7 +82,8 @@
     "tailwindcss": "^3.3.3",
     "unplugin-auto-import": "^0.16.6",
     "unplugin-vue-components": "^0.25.2",
-    "vite": "^4.4.9"
+    "vite": "^4.4.9",
+    "vite-plugin-windicss": "^1.9.1"
   },
   "lint-staged": {
     "*.{vue,js,ts,jsx,tsx,md}": [
